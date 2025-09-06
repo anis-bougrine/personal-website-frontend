@@ -31,3 +31,9 @@ npm run start
 npm install -g serve
 serve -s build
 ```
+
+- To package your build in an docker image, run:
+
+```bash
+docker build .
+````
