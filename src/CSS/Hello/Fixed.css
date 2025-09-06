@@ -1,0 +1,105 @@
+:root {
+    --default-color: #2a2b40;
+    --passed-color: purple;
+  }
+
+  @media (orientation: landscape) {
+    #FixedElement{
+        height: 10%;
+    }
+  }
+
+  @media (orientation: portrait) {
+    #FixedElement{
+        height: 6vw;
+    }
+  }
+  
+#FixedElement{
+    width:100%;
+    position: fixed;
+    z-index: 2;
+    background-color: rgba(246, 73, 167,0.3);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#FixedBar{
+    width:55%;
+    height: 80%;
+    background: #0a0a23 ;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    }
+
+#BasketContainer{
+    width: 30%;
+    height: 80%;
+    margin-left: 0.5%;
+    background: #0a0a23;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    grid-column-gap: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+}
+
+.navigation{
+    height: 70%;
+    background: var(--default-color);
+    border: thick double #F649A7;
+    text-align: center;
+    position: relative;
+}
+
+h6{
+    font-size: 0.8vw;
+    
+    position: absolute;
+
+    top: 50%;
+
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    margin: 0;
+}
+
+a{
+    font-family: IBM Plex Mono,monospace;
+    color: white;
+    text-shadow: 5px 5px 5px rgba(246,73,167,.6);
+    text-decoration:none; 
+}
+
+a:hover{
+    color: rgb(228, 60, 60);
+    animation-name: click-animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes basket-animation {
+
+    50%{
+      transform: scale(1.3);
+    }
+  
+  }
+
+
+@keyframes click-animation {
+    50%{color: white;}
+}

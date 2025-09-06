@@ -1,0 +1,9 @@
+#container6 h2{
+    height: 10%;
+}
+
+#container6 #DIY_body{
+    height: 90%;
+    overflow: auto;
+    text-align: justify;
+}

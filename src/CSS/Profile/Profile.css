@@ -1,0 +1,161 @@
+#container5{
+    display: grid;
+    grid-template-rows: 20% 20% 40%;
+    /* row-gap: 5%; */
+
+    padding: 0%;
+}
+#container5 p{
+    height: 100%;
+}
+#profile-head{
+    height: 100%;
+    display: grid;
+    grid-template-rows: 70% 30%;
+    /* background-color: antiquewhite; */
+    padding: 1%;
+}
+#profile-head p{
+    /* background-color: aqua; */
+    height: 70%;
+}
+#container5 form{
+    height: 100%;
+}
+
+#container5 .submit-btn{
+    left: 0%;
+    transform: translate(0%);
+    width: 85%;
+}
+#container5 #submit-btnlogout{
+    width: 50%;
+    left: 50%;
+    transform:  translate(-50%);
+}
+
+#container5 #confirmation{
+    /* margin-top: 1%; */
+    text-align: center;
+    color: red;
+}
+
+
+
+
+#container5 #purchase{
+    height: 100%;
+    /* width: calc(100% + 2vw);
+    margin-left: -1vw;
+    padding-left: 2vw; */
+    border-top: double #F649A7 ;
+    /* background-color: #F649A7; */
+    display: grid;
+    grid-template-rows: 25% 50%;
+    row-gap: 20%;
+
+    padding: 1%;
+}
+
+#purchase #summary{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+}
+
+#purchase #body{
+    height: 50%;
+    display: grid;
+    row-gap: 20%;
+    grid-template-columns: 20% 20% 60%;
+    grid-template-rows: 100%;
+}
+
+#purchase #formLine{
+    border-left: double #F649A7;
+    padding-left: 5%;
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 100%;
+}
+
+#container5 #forms{
+    /* margin-left: -1vw;
+    padding-left: 2vw; */
+    border-top: double #F649A7 ;
+    width: 100%;
+    /* position: absolute; */
+    /* bottom: 10%;
+    margin-bottom: 5%; */
+
+    display: grid;
+    /* row-gap: 5%; */
+    grid-template-rows: repeat(5, 20%);
+    grid-template-columns: 100%;
+
+    padding: 1%;
+}
+
+/* #summary{
+    margin-top: 1%;
+    margin-bottom: 2%;
+}
+#summary p{
+    margin-top: 1%;
+} */
+/* #forms h3{
+    grid-column: 1/ span 2;
+    margin-top: 1%;
+    height: 7%;
+} */
+
+#forms .formLine{
+    display: grid;
+    grid-template-columns: 25% 55% 20%;
+}
+
+#container5 input{
+    height: 90%;
+    width: 95%;
+}
+#container5 input::placeholder{
+    color: rgb(192, 184, 184);
+}
+#container5 .newpass{
+    width: 31%;
+    margin-right: 1%;
+}
+#container5 .remove{
+    width: 47%;
+    margin-right: 1%;
+}
+
+#container5 #foot{
+    border-top: double #F649A7 ;
+    /* margin-left: -1vw; */
+    width: 100%;
+    height: 10%;
+    position: absolute;
+    bottom: 0%;
+    
+    display: grid;
+
+    /* align-items: center;
+    justify-content: center; */
+
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    place-items: center;
+
+    /* padding: 2%; */
+}
+
+#container5 #session{
+    border-right: double #F649A7;
+    text-align: center;
+    /* margin-left: 2vw;
+    margin-top: 2%; */
+
+    height: 50%;
+}

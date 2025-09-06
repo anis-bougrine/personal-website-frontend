@@ -1,0 +1,151 @@
+@media (orientation: landscape) {
+  #content {
+    height:100vh;
+  }
+}
+@media (orientation: portrait) {
+  #content {
+    height:60vw;
+  }
+}
+
+#content {
+  z-index: 1;
+  position: relative;
+  width:100%;
+  color: white;
+  background:rgba(255,0,0,0);
+  display: grid;
+  grid-template-rows: 1fr 100px 200px 1fr;
+  grid-row-gap: 50px;
+}
+
+h1{
+  font-size: 2.5vw;
+}
+#content #text{
+  text-shadow: 5px 5px 5px rgba(246,73,167,.6);
+
+  justify-self: center;
+  text-align: center;
+  line-height: 50px;
+}
+#company-name{
+  color: #F649A7;
+  animation-name: company-name-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  text-shadow: 0 2px 5px rgba(246,73,167,.6);
+}
+
+@keyframes company-name-animation {
+  50%{color:#0a0a23;}
+}
+
+@media (orientation: portrait) {
+  #logo {
+    height: 12vw;
+    width: auto;
+  }
+}
+
+@media (orientation: landscape) {
+  #logo {
+    height: 20vh;
+    width:auto;
+  }
+}
+
+
+#logo{
+  /*border-color: red;
+  border-width: 5px;
+  border-style: solid;*/
+  justify-self: center;
+
+  filter: blur(0px);
+  transform: scale(1.1);
+  
+
+  animation-name: logo-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+
+@keyframes logo-animation {
+
+  50%{
+    filter: blur(2px);
+    transform: scale(1);
+  }
+
+}
+
+@media (orientation: landscape) {
+  #bar{
+    height: 100vh;
+  }
+}
+
+@media (orientation: portrait) {
+  #bar{
+    height: 60vw;
+  }
+
+}
+
+#bar{
+  z-index: 0;
+  width:100%;
+  position:absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5px 1fr;
+}
+
+#bar0{
+  background: linear-gradient(#F649A7,#F649A7);;
+  grid-area: 1/1/1/3;
+
+  animation-name: bar0-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+#bar1{
+  background-size: 100% 100%;
+  background: linear-gradient(to top right, rgba(255,0,0,0),rgba(255,0,0,0) 50%, #F649A7 50%,#F649A7 50.5%,#0a0a23 50.5%), #180421 url("http://backend/home/media/?name=background1.jpg") ;
+  
+  animation-name: bar1-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+#bar2{
+  background-size: 100% 100%;
+  background: linear-gradient(to top left, rgba(255,0,0,0),rgba(255,0,0,0) 50%, #F649A7 50%,#F649A7 50.5%,#0a0a23 50.5%), #180421 url("http://backend/home/media/?name=background2.jpg");
+
+  animation-name: bar2-animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+}
+
+
+@keyframes bar0-animation {
+    50%{background: linear-gradient(#0a0a23,#0a0a23);}
+}
+@keyframes bar1-animation {
+  50%{  background: linear-gradient(to top right, rgba(255,0,0,0),rgba(255,0,0,0) 50%,#0a0a23 50%),#180421 url("http://backend/home/media/?name=background1.jpg") ;}
+}
+@keyframes bar2-animation {
+  50%{  background: linear-gradient(to top left, rgba(255,0,0,0),rgba(255,0,0,0) 50%,#0a0a23 50%), #180421 url("http://backend/home/media/?name=background2.jpg") ;}
+}
+
+
