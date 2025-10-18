@@ -1,4 +1,4 @@
-# Use Node.js 16 as the base image
+# Use Node.js as the base image
 FROM node:22
 
 WORKDIR /frontend

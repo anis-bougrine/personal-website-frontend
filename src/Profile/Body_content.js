@@ -263,7 +263,7 @@ function Profile_content(){
       (
         <div id="profile-head">
           <p> 
-            {photoExist? <img src="/user/photo" height="100%" width="5%"/> : <i className="bi bi-person"></i>} {username}'s Profile:
+            {photoExist? <img src="/user/photo" height="100%" width="5%" alt="user-photo"/> : <i className="bi bi-person"></i>} {username}'s Profile:
           </p>
           <p id="confirmation">
             Your account is not confirmed yet, please check your mail box and confirm it to access all {companyName} services.
@@ -272,7 +272,7 @@ function Profile_content(){
       ):(
         <div id="profile-head">
           <p> 
-            {photoExist? <img src="/user/photo" height="100%" width="5%"/> : <i className="bi bi-person"></i>} {username}'s Profile:
+            {photoExist? <img src="/user/photo" height="100%" width="5%" alt="user-photo" /> : <i className="bi bi-person"></i>} {username}'s Profile:
           </p>
           <p></p>
         </div>
