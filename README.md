@@ -3,6 +3,13 @@
 This project is a part of a personal website that I've build while learning React. Feel free to use it if you like the design.
 This repositoty contains only frontend part, I can't share backend side since it contains snesitive personal data.
 
+## Branches
+
+This repository has 2 branches:
+
+- `main`: general purpose project.
+- `aws`: optimized for aws services (custom Github actions).
+
 ## Launch steps
 
 Follow these steps for dev or demo:
